@@ -1,0 +1,65 @@
+
+.absa-cards-wrapper > .absa-cards > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Ensure flexbox layout */
+  flex-direction: row; /* Ensure elements are side by side */
+  gap: 20px; /* Space between the cards */
+  justify-content: space-between; /* Ensure even spacing between the cards */
+}
+
+.absa-cards-wrapper > .absa-cards > ul > li {
+  border: none; /* Remove the border */
+  background-color: white; /* Set background to white */
+  width: 30%; /* Adjust as needed for desired width of each card */
+  display: flex;
+  flex-direction: column; /* Stack image and body vertically */
+  align-items: flex-start; /* Ensure content is left-aligned */
+}
+
+.absa-cards-wrapper .absa-cards-card-image {
+  line-height: 0;
+}
+
+.absa-cards-wrapper .absa-cards-card-image img {
+  width: 100%; /* Ensure the image spans the full width of the card */
+  height: auto; /* Ensure the image maintains its aspect ratio */
+  object-fit: cover;
+  aspect-ratio: 4 / 3; /* Ensure consistent aspect ratio */
+}
+
+.absa-cards-wrapper .absa-cards-card-body {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px; /* Adjust space between image and text */
+  padding: 0 10px; /* Add padding for better spacing */
+  align-items: flex-start; /* Ensure content is left-aligned */
+}
+
+.absa-cards-wrapper .absa-cards-card-body h5 {
+  margin: 10px 0; /* Adjust space around the title */
+}
+
+.absa-cards-wrapper .button-container {
+  display: flex; /* Ensure flexbox layout */
+  flex-direction: row; /* Ensure elements are side by side */
+  align-items: center; /* Vertically center the button */
+  margin-top: 10px; /* Adjust space between title and link */
+}
+
+.absa-cards-wrapper .button-container .button {
+  color: red;
+  font-size: inherit;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  background-color: transparent; /* Remove background color */
+  border: none; /* Remove border */
+  padding: 0; /* Remove padding */
+}
+
+.absa-cards-wrapper .button-container .button::after {
+  content: ' \2192'; /* Add the right-facing arrow */
+  margin-left: 5px;
+}
